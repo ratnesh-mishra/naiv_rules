@@ -4,7 +4,6 @@ __author__ = 'ratnesh.mishra'
 
 from nrules.decorators import *
 from nrules.executor import Executor, Evaluator
-from nrules.ordered_members import OrderedClassMembers
 
 lest = ['dert', 'purr', 'heamm', 'shitt']
 
@@ -23,8 +22,9 @@ class evaluate(Evaluator):
     def print_mister(self, data):
         print('mister')
 
-data = ('data', {'a': 5, 'b': 'shitt', 'c': 3, 'd': 5})
-e = evaluate()
-Executor.ruleset = e
-Executor.execute(data)
+if __name__ == '__main__':
+    data = ('data', {'a': 5, 'b': 'shitt', 'c': 3, 'd': 5})
+    e = evaluate()
+    Executor.ruleset = e
+    Executor.execute(data)
 
