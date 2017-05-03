@@ -1,0 +1,26 @@
+Implementation_plan
+
+Nearby targets
+
+1.Evade complexity for now, think in simple terms
+
+2. If it can't be better than if/else , its not worth doing
+
+3. Forward/Backward chaining may be avoided for practical purposes
+
+4. Try out with a set of decorators sitting upon actions
+
+5. Figure out way for setting up priority based evaluations(can be devised somehow using meta or superclasses/ factory dudes)
+
+6. Adding new rules should be straight forward and at a proper priority
+
+7. Simple is not foolish :)
+
+Long shots --
+
+1. Addition of new rules can be done objectively , from db or something with no or minimal code change or release
+
+2. Re-evaluation can be avoided in all scenarios (Redis may help)
+
+3 . Think of more possible improvements 
+ 
